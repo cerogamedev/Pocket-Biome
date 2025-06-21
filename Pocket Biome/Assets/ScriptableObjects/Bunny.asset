@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf99a23392e1e84e9dc478a1a7f4c5b, type: 3}
+  m_Name: Bunny
+  m_EditorClassIdentifier: 
+  speciesName: Bunny
+  icon: {fileID: 0}
+  diet: 0
+  startingHunger: 3
+  birthChance: 0.2
+  favouritePlant: {fileID: 11400000, guid: 7ef7f87cbbd5ad1488047b5ddc083c32, type: 2}
+  prefab: {fileID: 4746412478475654308, guid: 567a75d0e724ad34d93a1e822ae4a2d2, type: 3}
