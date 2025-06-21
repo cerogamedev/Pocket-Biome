@@ -45,14 +45,6 @@ pixel-art estetiği ve “neredeyse idle” oynanışıyla hızlı ama stratejik
 
 ---
 
-## Ekran Görüntüleri
-
-| Başlangıç | İlkbahar | Kış Dondurması |
-|-----------|---------|----------------|
-| ![start](docs/screenshots/turn0.png) | ![spring](docs/screenshots/turn12.png) | ![winter](docs/screenshots/turn24.png) |
-
----
-
 ## Oynanış
 
 ### Kurallar
