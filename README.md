@@ -11,6 +11,13 @@ Unity 2021.3 · 2D · Pico-esque pixel-art
   <img src="docs/screenshots/cover.gif" width="640" alt="Pocket Biome timelapse" />
 </p>
 
+![image](https://github.com/user-attachments/assets/d2ae22b5-6ec1-49b4-942b-7eacd78514ed)
+![image](https://github.com/user-attachments/assets/2dde59db-801f-4745-a036-07f25f2418e1)
+![image](https://github.com/user-attachments/assets/4043a371-c018-4a58-a970-0bbefaaa8131)
+![image](https://github.com/user-attachments/assets/fabc8a8c-eea6-4bd2-9521-9c9931c8f17d)
+
+
+
 ---
 
 ## 📖 İçindekiler
