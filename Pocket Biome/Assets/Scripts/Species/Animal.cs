@@ -1,16 +1,23 @@
 // Animal.cs  (/Scripts/Species)
 using UnityEngine;
+using DG.Tweening;
 
 public class Animal : MonoBehaviour
 {
     public AnimalSpeciesData Data { get; private set; }
     private Cell _host;
     private int _hunger;
+    void Start()
+    {
+        transform.localScale = new(0, 0, 0);
+        transform.DOScale(1, 1f);
+    }
 
     public void Init(AnimalSpeciesData data, Cell host)
     {
-        Data   = data;
-        _host  = host;
+        
+        Data = data;
+        _host = host;
         _hunger = data.startingHunger;
     }
 

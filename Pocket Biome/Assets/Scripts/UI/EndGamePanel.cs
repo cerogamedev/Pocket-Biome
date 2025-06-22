@@ -17,9 +17,9 @@ public class EndGamePanel : MonoBehaviour
 
     public void Show(int score, int pop, int div)
     {
-        scoreText.text = $"Skor: {score}";
-        popText.text   = $"Popülasyon: {pop}";
-        divText.text   = $"Çeşitlilik: {div}";
+        scoreText.text = $"Score: {score}";
+        popText.text   = $"Population: {pop}";
+        divText.text   = $"Divinity: {div}";
         Canva.SetActive(true);
     }
 }

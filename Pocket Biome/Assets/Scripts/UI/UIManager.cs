@@ -23,34 +23,32 @@ public class UIManager : MonoBehaviour
         UpdateLabel();
     }
 
-    private void OnNextTurn()
+private void OnNextTurn()
+{
+    _turn++;
+    grid.AdvanceTurn();
+    SeasonManager.Instance.TickTurn();
+    UpdateLabel();
+
+    // POPUP / MUTATION önce – oyun bitmediyse
+    if (_turn < _maxTurn &&
+        System.Array.Exists(_mutationTurns, t => t == _turn))
     {
-        if (_turn >= _maxTurn) return;
-
-        _turn++;
-        grid.AdvanceTurn();
-        SeasonManager.Instance.TickTurn();
-        UpdateLabel();
-
-        if (System.Array.Exists(_mutationTurns, t => t == _turn))
-        {
-            var choices = mutationManager.GetRandomChoices();
-            mutationPopup.Show(choices);
-            nextTurnBtn.interactable = false; 
-            mutationPopup.GetComponent<MutationPopup>().gameObject
-                .SetActive(true);
-
-            mutationPopup.gameObject.SetActive(true);
-            mutationPopup.GetComponent<MutationPopup>()
-                         .Show(choices);
-
-            mutationPopup.gameObject
-                .GetComponent<MutationPopup>()
-                .Show(choices);
-            mutationPopup.GetComponent<MutationPopup>()
-                         .Show(choices);
-        }
+        var choices = mutationManager.GetRandomChoices();
+        mutationPopup.Show(choices);
+        nextTurnBtn.interactable = false;
+        return;                                  // popup kapatılınca buton açılacak
     }
+
+    if (_turn >= _maxTurn)
+    {
+        nextTurnBtn.interactable = false;
+        int pop, div;
+        int score = ScoreManager.Instance.CalculateScore(out div, out pop);
+        endPanel.Show(score, pop, div);          // ← panel açılır
+    }
+}
+
 
 
     private void UpdateLabel()
