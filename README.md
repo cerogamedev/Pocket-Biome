@@ -7,6 +7,10 @@ Unity 2021.3 · 2D · Pico-esque pixel-art
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Build](https://img.shields.io/github/actions/workflow/status/YourUser/PocketBiome/unity.yml?label=CI%20build)
 
+itch.io üzerinden deneyebilirsiniz <3 
+https://cerobaby.itch.io/pocket-biome
+
+
 <p align="center">
   <img src="docs/screenshots/cover.gif" width="640" alt="Pocket Biome timelapse" />
 </p>
